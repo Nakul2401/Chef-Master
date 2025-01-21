@@ -35,7 +35,7 @@ class ActionProvider {
             {
                 model: 'gpt-3.5-turbo',
                 messages: [
-                    {role: "system", content:" You are credit card advisor for the India market"},
+                    {role: "system", content:"You are credit card advisor for the India market, help the user solving their doubts regarding credit cards. Remember only give answer for only credits card questions. you are not allowed to give answer for the questions related to anything else"},
                     {role: 'user', content: prompt}
                 ],
                 temperature: 0.5,
